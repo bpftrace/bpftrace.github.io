@@ -226,7 +226,7 @@ it.</p>
 </dl>
 </div>
 <div class="paragraph">
-<p>Note: the json output is ndjson, meaning each line of the streamed output is a single blob of valid json.</p>
+<p>The JSON output is compatible with NDJSON and JSON Lines, meaning each line of the streamed output is a single blob of valid JSON.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1488,6 +1488,26 @@ kretprobe:do_nanosleep /has_key(@start, tid)/ {
  * slept for 2002 ms
  * ...
  */</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This style of map may also be useful for capturing output parameters, or other context, between two different probes. For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>tracepoint:syscalls:sys_enter_wait4
+{
+  @out[tid] = args.ru;
+}
+
+tracepoint:syscalls:sys_exit_wait4
+{
+  $ru = @out[tid];
+  delete(@out, tid);
+  if ($ru != 0) {
+    printf("got usage ...", ...);
+  }
+}</pre>
 </div>
 </div>
 </div>
