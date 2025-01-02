@@ -1676,10 +1676,10 @@ For string arguments use the <code>str()</code> call to retrieve the value.</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">retval</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">int64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">uint64</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Value returned by the function being traced (kretprobe, uretprobe, fexit)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value returned by the function being traced (kretprobe, uretprobe, fexit). For kretprobe and uretprobe, its type is <code>uint64</code>, but for fexit it depends. You can look up the type using <code>bpftrace -lv</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">tid</p></td>
