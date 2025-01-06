@@ -10,7 +10,7 @@ High-level tracing language for Linux systems
 
 [Bug tracker](https://github.com/bpftrace/bpftrace/issues)
 
-[IRC](http://irc.lc/oftc/bpftrace/web@@@)
+[IRC](https://webchat.oftc.net/?channels=%23bpftrace)
 
 [Github](https://github.com/bpftrace/bpftrace/)
 
