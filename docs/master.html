@@ -1808,189 +1808,189 @@ Tracing block I/O sizes &gt; 0 bytes
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Function Name</th>
+<th class="tableblock halign-left valign-top">Name</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Sync/Async/Compile Time</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-bswap"><code>bswap(uint[8|16|32|64] n)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-bswap"><code>bswap</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reverse byte order</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-buf"><code>buf(void *d [, int length])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-buf"><code>buf</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Returns a hex-formatted string of the data pointed to by d</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-cat"><code>cat(char *filename)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-cat"><code>cat</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Print file content</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-cgroupid"><code>cgroupid(char *path)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-cgroupid"><code>cgroupid</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Resolve cgroup ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compile Time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-cgroup_path"><code>cgroup_path(int cgroupid, string filter)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-cgroup_path"><code>cgroup_path</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Convert cgroup id to cgroup path</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-exit"><code>exit([int code])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-exit"><code>exit</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Quit bpftrace with an optional exit code</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-join"><code>join(char *arr[] [, char *delim])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-join"><code>join</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Print the array</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-kaddr"><code>kaddr(char *name)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-kaddr"><code>kaddr</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Resolve kernel symbol name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compile Time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-kptr"><code>kptr(void *p)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-kptr"><code>kptr</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annotate as kernelspace pointer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-kstack"><code>kstack([StackMode mode, ][int level])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-kstack"><code>kstack</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kernel stack trace</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-ksym"><code>ksym(void *p)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-ksym"><code>ksym</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Resolve kernel address</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-macaddr"><code>macaddr(char[6] addr)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-macaddr"><code>macaddr</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Convert MAC address data</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-nsecs"><code>nsecs([TimestampMode mode])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-nsecs"><code>nsecs</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Timestamps and Time Deltas</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-ntop"><code>ntop([int af, ]int|char[4|16] addr)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-ntop"><code>ntop</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Convert IP address data to text</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-offsetof"><code>offsetof(struct, element)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-offsetof"><code>offsetof</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Offset of element in structure</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compile Time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-override"><code>override(u64 rc)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-override"><code>override</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Override return value</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-path"><code>path(struct path *path [, int32 size])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-path"><code>path</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Return full path</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-percpu-kaddr"><code>percpu_kaddr(const string name [, int cpu])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-percpu-kaddr"><code>percpu_kaddr</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Resolve percpu kernel symbol name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-print"><code>print(&#8230;&#8203;)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-print"><code>print</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Print a non-map value with default formatting</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-printf"><code>printf(char *fmt, &#8230;&#8203;)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-printf"><code>printf</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Print formatted</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-pton"><code>pton(const string *addr)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-pton"><code>pton</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Convert text IP address to byte array</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compile Time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-reg"><code>reg(char *name)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-reg"><code>reg</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Returns the value stored in the named register</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-signal"><code>signal(char[] signal | u32 signal)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-signal"><code>signal</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Send a signal to the current process</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-sizeof"><code>sizeof(&#8230;&#8203;)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-sizeof"><code>sizeof</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Return size of a type or expression</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-skboutput"><code>skboutput(const string p, struct sk_buff *s, &#8230;&#8203;)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-skboutput"><code>skboutput</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Write skb 's data section into a PCAP file</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-str"><code>str(char *s [, int length])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-str"><code>str</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Returns the string pointed to by s</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strcontains"><code>strcontains(const char *haystack, const char *needle)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strcontains"><code>strcontains</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compares whether the string haystack contains the string needle.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strerror"><code>strerror(uint64 error)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strerror"><code>strerror</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Get error message for errno code</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strftime"><code>strftime(char *format, int nsecs)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strftime"><code>strftime</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Return a formatted timestamp</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strncmp"><code>strncmp(char *s1, char *s2, int length)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-strncmp"><code>strncmp</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compare first n characters of two strings</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-system"><code>system(char *fmt)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-system"><code>system</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Execute shell command</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-time"><code>time(char *fmt)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-time"><code>time</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Print formatted time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-uaddr"><code>uaddr(char *name)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-uaddr"><code>uaddr</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Resolve user-level symbol name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Compile Time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-uptr"><code>uptr(void *p)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-uptr"><code>uptr</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annotate as userspace pointer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-ustack"><code>ustack([StackMode mode, ][int level])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-ustack"><code>ustack</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">User stack trace</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-usym"><code>usym(void *p)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-usym"><code>usym</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Resolve user space address</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
@@ -3480,74 +3480,74 @@ The data type associated with these functions are only for internal use and are 
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Function Name</th>
+<th class="tableblock halign-left valign-top">Name</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Sync/async</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-avg"><code>avg(int64 n)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-avg"><code>avg</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Calculate the running average of <code>n</code> between consecutive calls.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-clear"><code>clear(map m)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-clear"><code>clear</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Clear all keys/values from a map.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-count"><code>count()</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-count"><code>count</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Count how often this function is called.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-delete"><code>delete(map m, mapkey k)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-delete"><code>delete</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Delete a single key from a map.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-has_key"><code>has_key(map m, mapkey k)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-has_key"><code>has_key</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Return true (1) if the key exists in this map. Otherwise return false (0).</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-hist"><code>hist(int64 n[, int k])</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-hist"><code>hist</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Create a log2 histogram of n using buckets per power of 2, 0 &#8656; k &#8656; 5, defaults to 0.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-len"><code>len(map m)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-len"><code>len</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Return the number of elements in a map.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-lhist"><code>lhist(int64 n, int64 min, int64 max, int64 step)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-lhist"><code>lhist</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Create a linear histogram of n. lhist creates M ((max - min) / step) buckets in the range [min,max) where each bucket is step in size.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-max"><code>max(int64 n)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-max"><code>max</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Update the map with n if n is bigger than the current value held.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-min"><code>min(int64 n)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-min"><code>min</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Update the map with n if n is smaller than the current value held.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-stats"><code>stats(int64 n)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-stats"><code>stats</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Combines the count, avg and sum calls into one.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-sum"><code>sum(int64 n)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-sum"><code>sum</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Calculate the sum of all n passed.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-zero"><code>zero(map m)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#map-functions-zero"><code>zero</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Set all values for all keys to zero.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
