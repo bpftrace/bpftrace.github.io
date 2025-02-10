@@ -1862,6 +1862,11 @@ Tracing block I/O sizes &gt; 0 bytes
 <td class="tableblock halign-left valign-top"><p class="tableblock">Async</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-len"><code>len</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Count ustack/kstack frames</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#functions-macaddr"><code>macaddr</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Convert MAC address data</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sync</p></td>
@@ -2368,6 +2373,24 @@ The address to name mapping happens in user-space.</p>
  * do_nanosleep
  */</pre>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="functions-len">len</h3>
+<div class="ulist">
+<div class="title">variants</div>
+<ul>
+<li>
+<p><code>int64 len(ustack stack)</code></p>
+</li>
+<li>
+<p><code>int64 len(kstack stack)</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Retrieve the depth (measured in # of frames) of the call stack
+specified by <code>stack</code>.</p>
 </div>
 </div>
 <div class="sect2">
